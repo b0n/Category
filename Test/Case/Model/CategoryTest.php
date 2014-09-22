@@ -40,21 +40,18 @@ class CategoryTest extends CakeTestCase {
 	public function testLink() {
 		$this->Category->save(array(
 			'id' => 2,
-			'model' => 'Lorem ipsum dolor ',
 			'parent_id' => 1,
 			'label' => 'Lorem ipsum dolor sit amet',
 			'slug' => 'cat2'
 		));
 		$this->Category->save(array(
 			'id' => 3,
-			'model' => 'Lorem ipsum dolor ',
 			'parent_id' => 2,
 			'label' => 'Lorem ipsum dolor sit amet',
 			'slug' => 'cat3'
 		));
 		$this->Category->save(array(
 			'id' => 4,
-			'model' => 'Lorem ipsum dolor ',
 			'parent_id' => null,
 			'label' => 'Lorem ipsum dolor sit amet',
 			'slug' => 'cat4'
