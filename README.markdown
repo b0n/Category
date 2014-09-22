@@ -6,17 +6,35 @@ Simple category plugin for CakePHP.
 
 ## Installation
 
+_[GIT Clone]_
+
+In your app directory type:
+
+```shell
+$ git submodule add -b master git://github.com/tsmsogn/Category.git Plugin/Category
+$ git submodule init
+$ git submodule update
+```
+
 ### Enable plugin
 
 In 2.0 you need to enable the plugin your app/Config/bootstrap.php file:
 
-```
+```php
 <?php
 CakePlugin::load('Category');
 ?>
 ```
 
 If you are already using CakePlugin::loadAll();, then this is not necessary.
+
+### Update schema
+
+In your app directory type:
+
+```shell
+$ Console/cake schema update -p Category
+```
 
 ## License
 
