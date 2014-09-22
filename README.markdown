@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/tsmsogn/Category.svg)](https://travis-ci.org/tsmsogn/Category)
 
-File upload plugin for CakePHP. Inspired cakephp-upload(https://github.com/josegonzalez/cakephp-upload)
+Simple category plugin for CakePHP.
 
 ## Installation
 
