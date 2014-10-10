@@ -10,7 +10,7 @@ Simple category plugin for CakePHP.
 
 ## Installation
 
-_[GIT Clone]_
+_[GIT Submodule]_
 
 In your app directory type:
 
