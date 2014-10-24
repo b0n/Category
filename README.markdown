@@ -10,15 +10,7 @@ Simple category plugin for CakePHP.
 
 ## Installation
 
-_[GIT Submodule]_
-
-In your app directory type:
-
-```shell
-git submodule add -b master git://github.com/tsmsogn/Category.git Plugin/Category
-git submodule init
-git submodule update
-```
+Put your app plugin directory as `Category`.
 
 ### Enable plugin
 
