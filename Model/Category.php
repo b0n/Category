@@ -7,6 +7,13 @@ App::uses('CategoryAppModel', 'Category.Model');
 class Category extends CategoryAppModel {
 
 /**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'label';
+
+/**
  * Behabior
  *
  * @var array
