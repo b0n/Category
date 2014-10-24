@@ -18,11 +18,9 @@ In 2.0 you need to enable the plugin your app/Config/bootstrap.php file:
 
 ```php
 <?php
-CakePlugin::load('Category');
+CakePlugin::load('Category', array('bootstrap' => false, 'routes' => true));
 ?>
 ```
-
-If you are already using CakePlugin::loadAll();, then this is not necessary.
 
 ### Update schema
 
