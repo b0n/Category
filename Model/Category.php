@@ -7,6 +7,13 @@ App::uses('CategoryAppModel', 'Category.Model');
 class Category extends CategoryAppModel {
 
 /**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'label';
+
+/**
  * Behabior
  *
  * @var array
@@ -61,10 +68,10 @@ class Category extends CategoryAppModel {
 		return true;
 	}
 
-	/**
-	 * @param bool $created
-	 * @param array $options
-	 */
+/**
+ * @param bool $created
+ * @param array $options
+ */
 	public function afterSave($created, $options = array()) {
 		$this->__updateLink($this->id);
 		$children = $this->children($this->id);
@@ -75,10 +82,10 @@ class Category extends CategoryAppModel {
 		}
 	}
 
-	/**
-	 * @param null $id
-	 * @return bool
-	 */
+/**
+ * @param null $id
+ * @return bool
+ */
 	private function __updateLink($id = null) {
 		if ($id === null) {
 			$id = $this->getID();
