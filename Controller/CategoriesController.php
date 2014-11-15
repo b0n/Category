@@ -99,7 +99,7 @@ class CategoriesController extends CategoryAppController {
 		if (!$this->Category->exists()) {
 			throw new NotFoundException(__('Invalid category'));
 		}
-		$this->request->onlyAllow('post', 'delete');
+		$this->request->allowMethod('post', 'delete');
 		if ($this->Category->delete()) {
 			$this->Session->setFlash(__('The category has been deleted.'));
 		} else {
