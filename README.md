@@ -4,6 +4,10 @@
 
 Simple category plugin for CakePHP.
 
+## Requirements
+
+- CakePHP 2.5.x or later
+
 ## Features
 
 - Admin CRUD, sorting order
