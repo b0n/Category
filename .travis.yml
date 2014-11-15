@@ -6,8 +6,6 @@ php:
   - 5.5
 
 env:
-  - CAKE_VERSION=2.3.10
-  - CAKE_VERSION=2.4.10
   - CAKE_VERSION=master
  
 before_script:
@@ -27,6 +25,12 @@ before_script:
       'persistent' => false,
     );
     }" > ../cakephp/app/Config/database.php
- 
+  - echo "
+    Configure::write('Routing.prefixes', array('admin'));
+    " >> ../cakephp/app/Config/core.php
+  - echo "
+    CakePlugin::load('Category', array('bootstrap' => false, 'routes' => true));
+    " >> ../cakephp/app/Config/bootstrap.php
+
 script:
   - ./lib/Cake/Console/cake test Category AllTests --stderr
