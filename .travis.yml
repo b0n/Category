@@ -27,7 +27,7 @@ before_script:
       'persistent' => false,
     );
     }" > ../cakephp/app/Config/database.php
-   - echo "
+  - echo "
     Configure::write('Routing.prefixes', array('admin'));
     " >> ../cakephp/app/Config/core.php
   - echo "
