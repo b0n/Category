@@ -111,8 +111,9 @@ class CategoriesController extends CategoryAppController {
 /**
  * admin_moveup method
  *
+ * @param null $id
+ * @param null $delta
  * @throws NotFoundException
- * @param string $id
  * @return void
  */
 	public function admin_moveup($id = null, $delta = null) {
@@ -137,8 +138,9 @@ class CategoriesController extends CategoryAppController {
 /**
  * admin_movedown method
  *
+ * @param null $id
+ * @param null $delta
  * @throws NotFoundException
- * @param string $id
  * @return void
  */
 	public function admin_movedown($id = null, $delta = null) {
