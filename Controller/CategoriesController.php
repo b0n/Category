@@ -159,5 +159,4 @@ class CategoriesController extends CategoryAppController {
 
 		return $this->redirect(array('action' => 'index'));
 	}
-
 }
