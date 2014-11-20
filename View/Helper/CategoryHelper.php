@@ -38,7 +38,7 @@ class CategoryHelper extends AppHelper {
 					'plugin' => $options['plugin'],
 					'controller' => $options['controller'],
 					'action' => $options['action'],
-					'link' => $category['Category']['link'],
+					$category['Category']['id'],
 				), $categoryAttr);
 			} else {
 				$categoryOutput = $category['Category']['title'];
