@@ -38,7 +38,7 @@ Console/cake schema update -p Category
 
 ### CategoryHelper
 
-- Create nested link example:
+- Example of creating nested link in view:
 
 ```php
 <?php
@@ -52,6 +52,8 @@ echo $this->Category->nestedCategories($categories, array(
 ));
 ?>
 ```
+
+`$categories` is assigned with `$this->Category->find('threaded', array('order' => array('Category.lft' => 'ASC')));`
 
 ## License
 
