@@ -31,11 +31,9 @@ class CategoryHelper extends AppHelper {
 		$output = '';
 		foreach ($categories as $category) {
 			if ($options['link']) {
-				pr($category['Category']['id']);
 				$categoryAttr = array(
 					'id' => 'category-' . $category['Category']['id'],
 				);
-				pr($categoryAttr);
 				$categoryOutput = $this->Html->link($category['Category']['label'], array(
 					'plugin' => $options['plugin'],
 					'controller' => $options['controller'],
