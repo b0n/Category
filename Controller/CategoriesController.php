@@ -129,7 +129,7 @@ class CategoriesController extends CategoryAppController {
 				$this->Session->setFlash(__d('category', 'Could not move up'));
 			}
 		} else {
-			$this->Session->setFlash(__d('category', 'Please provide the number of positions the field should be moved up.'));
+			$this->Session->setFlash(__d('category', 'Please provide a number of positions the field should be moved up.'));
 		}
 
 		return $this->redirect(array('action' => 'index'));
