@@ -41,7 +41,7 @@ class CategoryHelper extends AppHelper {
 					$category['Category']['id'],
 				), $categoryAttr);
 			} else {
-				$categoryOutput = $category['Category']['title'];
+				$categoryOutput = $category['Category']['label'];
 			}
 			if (isset($category['children']) && count($category['children']) > 0) {
 				$categoryOutput .= $this->nestedCategories($category['children'], $options, $depth + 1);
