@@ -191,21 +191,21 @@ class CategoriesControllerTest extends ControllerTestCase {
 	}
 
 /**
- * testAdminMoveup method
+ * testAdminMoveUp method
  *
  * @return void
  */
-	public function testAdminMoveup() {
-		$this->markTestIncomplete('testAdminMoveup not implemented.');
+	public function testAdminMoveUp() {
+		$this->markTestIncomplete('testAdminMoveUp not implemented.');
 	}
 
 /**
- * testAdminMovedown method
+ * testAdminMoveDown method
  *
  * @return void
  */
-	public function testAdminMovedown() {
-		$this->markTestIncomplete('testAdminMovedown not implemented.');
+	public function testAdminMoveDown() {
+		$this->markTestIncomplete('testAdminMoveDown not implemented.');
 	}
 
 }

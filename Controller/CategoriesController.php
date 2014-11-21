@@ -109,14 +109,14 @@ class CategoriesController extends CategoryAppController {
 	}
 
 /**
- * admin_moveup method
+ * admin_move_up method
  *
  * @param null $id
  * @param null $delta
  * @throws NotFoundException
  * @return void
  */
-	public function admin_moveup($id = null, $delta = null) {
+	public function admin_move_up($id = null, $delta = null) {
 		$this->Category->id = $id;
 		if (!$this->Category->exists()) {
 			throw new NotFoundException(__('Invalid category'));
@@ -136,14 +136,14 @@ class CategoriesController extends CategoryAppController {
 	}
 
 /**
- * admin_movedown method
+ * admin_move_down method
  *
  * @param null $id
  * @param null $delta
  * @throws NotFoundException
  * @return void
  */
-	public function admin_movedown($id = null, $delta = null) {
+	public function admin_move_down($id = null, $delta = null) {
 		$this->Category->id = $id;
 		if (!$this->Category->exists()) {
 			throw new NotFoundException(__('Invalid category'));
